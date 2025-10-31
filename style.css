@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #000428, #004e92);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 28px 25px;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  max-width: 430px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+  animation: slideUp 1.2s ease-out;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #00ffff;
+}
+
+.subs {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.link-line {
+  margin-top: 10px;
+  color: #ffcc00;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.promo {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.promo span {
+  color: #90ff8a;
+  font-weight: 600;
+}
+
+.guarantee {
+  margin-top: 6px;
+  color: #00eaff;
+  font-weight: 600;
+}
+
+.timer-box {
+  margin: 18px 0;
+}
+
+#countdown {
+  font-size: 3rem;
+  color: #ffcc00;
+  margin: 8px 0;
+}
+
+.text {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.unit {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.join-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff9900, #ff0044);
+  color: #fff;
+  font-weight: 700;
+  padding: 14px 34px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-top: 12px;
+  animation: fadePulse 1.5s infinite alternate;
+  transition: transform 0.3s ease;
+}
+
+.join-btn:hover {
+  transform: scale(1.08);
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.2rem;
+  color: #ddd;
+  margin-top: 20px;
+  max-width: 90%;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadePulse {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 480px) {
+  .title { font-size: 1.7rem; }
+  #countdown { font-size: 2.6rem; }
+}
